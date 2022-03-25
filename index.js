@@ -12,12 +12,12 @@ dotenv.config();
 connection();
 const allowedDomains = ['https://magnificent-flan-520a6c.netlify.app'];
 const corsOptions = {
-    origin: function(origin, callback) {
-        if(allowedDomains.indexOf(origin) !== -1) 
-            callback(null, true);
-        else 
-            callback(new Error('Not allowed by CORS'));
-    }
+//     origin: function(origin, callback) {
+//         if(allowedDomains.indexOf(origin) !== -1) 
+//             callback(null, true);
+//         else 
+//             callback(new Error('Not allowed by CORS'));
+//     }
 }
 
 app.use(express.json());
