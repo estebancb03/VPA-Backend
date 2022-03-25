@@ -10,7 +10,7 @@ const port = process.env.PORT || 4000;
 
 dotenv.config();
 connection();
-const allowedDomains = [process.env.FRONTEND_URL];
+const allowedDomains = ['https://magnificent-flan-520a6c.netlify.app'];
 const corsOptions = {
     origin: function(origin, callback) {
         if(allowedDomains.indexOf(origin) !== -1) 
